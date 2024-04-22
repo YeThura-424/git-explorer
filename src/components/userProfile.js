@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "./styles.css";
+import "./style.css";
 
 const UserProfile = () => {
   const [gitUserData, setGitUserData] = useState({});

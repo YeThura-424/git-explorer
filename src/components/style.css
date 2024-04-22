@@ -88,7 +88,7 @@ nav {
   align-items: center;
   width: 20%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   flex-direction: column;
   border-radius: 19px;
   background: #bababa;
@@ -101,6 +101,13 @@ nav {
 .username {
   margin-top: 15px;
   margin-bottom: 5px;
+}
+.user-profile-main-cont {
+  padding: 20px;
+  margin-top: 55px;
+  border-radius: 19px;
+  background: #bababa;
+  box-shadow: 11px 11px 22px #888888, -11px -11px 22px #ececec;
 }
 @media only screen and (max-width: 768px) {
   .user-card-cont {
