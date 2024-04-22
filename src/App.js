@@ -5,6 +5,7 @@ import Users from "./components/users";
 import NavBar from "./components/navbar";
 import NotFound from "./components/notFound";
 import UserProfile from "./components/userProfile";
+import SearchUser from "./components/searchUser";
 import "./App.css";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/users/user" element={<UserProfile />} />
+          <Route path="/users/user/:username" element={<UserProfile />} />
+          <Route path="/search" element={<SearchUser />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
