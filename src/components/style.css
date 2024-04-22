@@ -11,13 +11,15 @@
 }
 
 nav {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 100%;
+  position: fixed;
+  top: 10px;
+  width: 95%;
   height: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background: #bababa;
+  box-shadow: 11px 11px 22px #888888, -11px -11px 22px #ececec;
 }
 
 .logo-nav {
@@ -36,6 +38,7 @@ nav {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .repo-desc {
@@ -85,7 +88,11 @@ nav {
   align-items: center;
   width: 20%;
   padding: 10px;
+  margin-bottom: 20px;
   flex-direction: column;
+  border-radius: 19px;
+  background: #bababa;
+  box-shadow: 11px 11px 22px #888888, -11px -11px 22px #ececec;
 }
 
 .user-avatar {
