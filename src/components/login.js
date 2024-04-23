@@ -10,7 +10,7 @@ const Login = ({ setIsLogged, setUsername }) => {
   const navigate = useNavigate();
 
   const dummyUserObject = {
-    username: "Kolosafo",
+    username: "yethura-424",
     password: "12345",
   };
   const handleLogin = (e) => {
@@ -21,7 +21,7 @@ const Login = ({ setIsLogged, setUsername }) => {
     ) {
       setUsername(loginUsername);
       setIsLogged(true);
-      navigate("/authProfile");
+      navigate("/auth-profile");
     } else {
       setErrorMsg("Invalid Credentials");
     }
