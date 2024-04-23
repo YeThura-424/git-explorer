@@ -17,29 +17,27 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<NavBar isLogged={isLogged} />}>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/users/user/:username" element={<UserProfile />} />
-          <Route path="/search" element={<SearchUser />} />
-          <Route
-            path="/login"
-            element={
-              <Login setIsLogged={setIsLogged} setUsername={setUsername} />
-            }
-          />
-          <Route
-            path="/auth-profile"
-            element={
-              isLogged ? (
-                <AuthProfile username={username} />
-              ) : (
-                <Navigate replace to="/login" />
-              )
-            }
-          />
-        </Route>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/users/user/:username" element={<UserProfile />} />
+        <Route path="/search" element={<SearchUser />} />
+        <Route
+          path="/login"
+          element={
+            <Login setIsLogged={setIsLogged} setUsername={setUsername} />
+          }
+        />
+        <Route
+          path="/auth-profile"
+          element={
+            isLogged ? (
+              <AuthProfile username={username} />
+            ) : (
+              <Navigate replace to="/login" />
+            )
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

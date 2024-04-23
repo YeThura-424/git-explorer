@@ -13,8 +13,8 @@ const Navbar = ({ isLogged }) => {
           <Link to="/">Repos</Link>
           <Link to="/users">Users</Link>
           <Link to="/search">Search</Link>
-          {isLogged && <Link to="/auth-profile">Profile</Link>}
-          {!isLogged && <Link to="/login">Login</Link>}
+          <Link to="/auth-profile">Profile</Link>
+          <Link to="/login">Login</Link>
         </div>
       </nav>
       <Outlet />
