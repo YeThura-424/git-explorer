@@ -16,7 +16,7 @@ const AuthProfile = ({ username }) => {
     getGitUser().catch((e) => console.error(e));
   }, []);
   return (
-    <div className="user-profile-main-cont">
+    <div className="">
       <h2 style={{ marginTop: "40px", marginBottom: "20px" }}>YOUR PROFILE</h2>
       <div className="top-cont">
         <img

@@ -1,10 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./style.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const RepoList = () => {
   //State management
   const [repos, setRepos] = useState(null);
+  const navigate = useNavigate();
   const gitRepos = async () => {
     const response = await axios.get(
       "https://api.github.com/search/repositories?q=XXX"
@@ -29,13 +31,20 @@ const RepoList = () => {
             <span className="username">{repo.name}</span>
 
             <span className="repo-lang-span">Language: {repo.language}</span>
-            <div>
-              By: <button className="repo-owner">{repo.owner.login}</button>
+            <div className="card-button">
+              <button
+                onClick={() => navigate(`/users/user/${repo.owner.login}`)}
+              >
+                By : {repo.owner.login}
+              </button>
+              <button
+                onClick={() =>
+                  navigate(`/repo-detail/${repo.name}/${repo.owner.login}`)
+                }
+              >
+                View Repo
+              </button>
             </div>
-
-            <button>
-              <button>View Repo</button>
-            </button>
           </div>
         ))
       ) : (

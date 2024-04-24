@@ -20,6 +20,7 @@ nav {
   align-items: center;
   background: #bababa;
   box-shadow: 11px 11px 22px #888888, -11px -11px 22px #ececec;
+  z-index: 3;
 }
 
 .logo-nav {
@@ -28,12 +29,17 @@ nav {
 }
 
 .link-cont {
-  margin-right: 50px;
-  width: 20%;
+  margin-right: 15px;
   display: flex;
   justify-content: space-around;
+  gap: 8px;
 }
-
+.link-cont a {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #bababa;
+  box-shadow: inset 6px 6px 12px #888888, inset -6px -6px 12px #ececec;
+}
 .users-cont {
   margin-top: 50px;
   display: flex;
@@ -67,6 +73,7 @@ nav {
 }
 .avatar-img {
   width: 50%;
+  mix-blend-mode: multiply;
 }
 
 .clone-url-inp {
@@ -97,6 +104,7 @@ nav {
 
 .user-avatar {
   width: 70%;
+  mix-blend-mode: multiply;
 }
 .username {
   margin-top: 15px;
@@ -119,10 +127,16 @@ nav {
 
 .top-cont {
   display: flex;
+  padding: 20px;
+  margin-top: 55px;
+  border-radius: 19px;
+  background: #bababa;
+  box-shadow: 11px 11px 22px #888888, -11px -11px 22px #ececec;
 }
 
 .user-avatar-img {
   width: 30%;
+  mix-blend-mode: multiply;
 }
 .name-cont {
   flex: 1;

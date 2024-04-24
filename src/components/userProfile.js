@@ -18,7 +18,7 @@ const UserProfile = () => {
     getGitUser().catch((e) => console.error(e));
   }, []);
   return (
-    <div className="user-profile-main-cont">
+    <div className="">
       <div className="top-cont">
         <img
           src={gitUserData.avatar_url}
